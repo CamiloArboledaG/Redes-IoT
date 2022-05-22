@@ -39,15 +39,15 @@ export const Datos = () => {
         "X-Auth-Token": "BBFF-8XOxNOBcvGFpmt5y7jfv1JLvaNiO0I",
       };
       const res = await axios.get(
-        "http://industrial.api.ubidots.com/api/v1.6/devices/papinodo/cloro/values",
+        "https://industrial.api.ubidots.com/api/v1.6/devices/papinodo/cloro/values",
         { headers }
       );
       const res2 = await axios.get(
-        "http://industrial.api.ubidots.com/api/v1.6/devices/papinodo/ph/values",
+        "https://industrial.api.ubidots.com/api/v1.6/devices/papinodo/ph/values",
         { headers }
       );
       const res3 = await axios.get(
-        "http://industrial.api.ubidots.com/api/v1.6/devices/papinodo/turbidez/values",
+        "https://industrial.api.ubidots.com/api/v1.6/devices/papinodo/turbidez/values",
         { headers }
       );
       setCloro(res.data.results);
