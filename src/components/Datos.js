@@ -9,7 +9,6 @@ import Table from "./Table";
 import DialogTitle from "@mui/material/DialogTitle";
 
 export const Datos = () => {
-  const [Dispositivos, setDispositivos] = useState(["PapiNodo"]);
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -64,11 +63,10 @@ export const Datos = () => {
         <h1 className="TituloDatos">Dispositivos</h1>
       </header>
       <div className="BodyDatos">
-        {Dispositivos.map((Dato) => (
           <div className="Dispositivo">
             <div className="HeaderDato">
-              <h2 className="TituloHeaderDato">Dispositivo {Dato}</h2>
-              <a className="HistorialButton" onClick={handleClickOpen}>
+              <h2 className="TituloHeaderDato">Dispositivo Papinodo</h2>
+              <a className="HistorialButton" onClick={handleClickOpen} href>
                 Ver Historial
               </a>
               <Dialog
@@ -78,7 +76,7 @@ export const Datos = () => {
                 aria-describedby="alert-dialog-description"
               >
                 <DialogTitle id="alert-dialog-title">
-                  Dispositivo {Dato}
+                  Dispositivo Papinodo
                 </DialogTitle>
                 <DialogContent>
                   <Table ph={ph} turbidez={turbidez} cloro={cloro} />
@@ -96,7 +94,6 @@ export const Datos = () => {
               <p className="Dato">Turbidez: {turbidez[0].value} NTU</p>
             </div>
           </div>
-        ))}
       </div>
     </div>
   );
