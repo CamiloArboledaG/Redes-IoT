@@ -1,11 +1,11 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, {  useLayoutEffect, useState } from "react";
 import "./Datos.css";
 import axios from "axios";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import Table from "./Table"
+import Table from "./Table";
 import DialogTitle from "@mui/material/DialogTitle";
 
 export const Datos = () => {
@@ -81,7 +81,7 @@ export const Datos = () => {
                   Dispositivo {Dato}
                 </DialogTitle>
                 <DialogContent>
-                    <Table ph={ph} turbidez={turbidez} cloro={cloro} />
+                  <Table ph={ph} turbidez={turbidez} cloro={cloro} />
                 </DialogContent>
                 <DialogActions>
                   <Button onClick={handleClose}>Cerrar</Button>

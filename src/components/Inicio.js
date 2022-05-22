@@ -8,12 +8,10 @@ export const Inicio = () => {
       <div className="left">
         <h1 className="Titulo">Piscina IoT</h1>
         <h2 className="subTitulo">
-          Una piscina inteligente para todos, observar constantemente los niveles de
-          cloro, PH y turbidez.
+          Una piscina inteligente para todos, observa constantemente los niveles
+          de cloro, PH y turbidez.
         </h2>
-        <p className="bajar">
-          ¡¡Sigue Bajando!!
-        </p>
+        <p className="bajar">¡¡Sigue Bajando!!</p>
       </div>
       <div className="right">
         <img src={piscina} alt="Imagen de una piscina" className="imagen" />
